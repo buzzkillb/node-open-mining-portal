@@ -28,10 +28,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zone117x/node-open-mining-portal.git"
+        "url": "https://github.com/zPools/node-open-mining-portal.git"
     },
     "dependencies": {
-        "stratum-pool": "git://github.com/zone117x/node-stratum-pool.git",
+        "stratum-pool": "git://github.com/zPools/node-stratum-pool.git",
         "dateformat": "1.0.12",
         "node-json-minify": "*",
         "redis": "0.12.1",
@@ -43,7 +43,7 @@
         "dot": "*",
         "colors": "*",
         "node-watch": "*",
-        "request": "*",
+        "request": "2.81.0",
         "nonce": "*",
         "bignum": "0.12.5",
         "extend": "*"
