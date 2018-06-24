@@ -28,10 +28,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/zPools/node-open-mining-portal.git"
+        "url": "https://github.com/buzzkillb/node-open-mining-portal.git"
     },
     "dependencies": {
-        "stratum-pool": "git://github.com/zPools/node-stratum-pool.git",
+        "stratum-pool": "git://github.com/buzzkillb/node-stratum-pool.git",
         "dateformat": "1.0.12",
         "node-json-minify": "*",
         "redis": "0.12.1",
