@@ -4,6 +4,11 @@
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```
+sudo apt-get install build-essential libssl-dev npm nodejs nodejs-legacy
+curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+source ~/.profile
+nvm install 0.10.25
+nvm use 0.10.25
 git clone https://github.com/buzzkillb/node-open-mining-portal.git pool
 cd pool
 npm update
