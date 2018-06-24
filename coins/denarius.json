@@ -1,0 +1,7 @@
+{
+    "name": "Denarius",
+    "symbol": "DNR",
+    "algorithm": "tribus",
+    "reward": "POS",
+    "normalHashing": true
+}
