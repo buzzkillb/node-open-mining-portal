@@ -1,0 +1,7 @@
+{
+    "name": "GINcoin",
+    "symbol": "GIN",
+    "algorithm": "lyra2z",
+    "reward": "POS",
+    "normalHashing": true
+}
