@@ -1,0 +1,7 @@
+{
+    "name": "Sono",
+    "symbol": "SONO",
+    "algorithm": "sonoa",
+    "reward": "POS",
+    "normalHashing": true
+}
