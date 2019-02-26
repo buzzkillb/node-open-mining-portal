@@ -15,7 +15,7 @@ RUN apt-get install -y \
 
 WORKDIR /root/
 RUN (curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh && \
-#RUN touch ~/.bash_profile
+    touch ~/.bash_profile && \
     source ~/.profile && \
     nvm install 0.10.25 && \
     nvm use 0.10.25)
