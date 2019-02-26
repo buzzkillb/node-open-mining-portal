@@ -1,6 +1,9 @@
 FROM ubuntu:16.04 as builder
 # Build environment
 
+# Replace shell with bash so we can source files
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
 # Base
 RUN apt-get update
 RUN apt-get install -y \
