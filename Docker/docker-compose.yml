@@ -1,0 +1,21 @@
+version: '3'
+services:
+    nomp:
+        build: .
+        ports: 
+            - "8080:8080"
+        volumes:
+            - ${PWD}/config.json:/root/node-open-mining-portal/config.json
+            - ${PWD}/pool_configs:/root/node-open-mining-portal/pool_configs
+        links:
+            - redis
+            - denarius
+    redis:
+        image: redis
+    denarius:
+        image: buzzkillb/denariusdaemon-nomp:latest
+        volumes:
+            - denarius-vol:/root/.denarius/
+        command: denariusd -printtoconsole -txindex -addnode=denarius.win -addnode=denarius.host
+volumes:
+    denarius-vol:
