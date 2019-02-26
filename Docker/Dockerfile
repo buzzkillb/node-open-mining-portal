@@ -32,10 +32,8 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 #    source ~/.profile && \
 #    nvm install 0.10.25 && \
 #    nvm use 0.10.25)
-RUN git clone https://github.com/buzzkillb/node-open-mining-portal.git
-
-WORKDIR /root/node-open-mining-portal
-RUN (npm install && \
+RUN (git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
+    npm install && \
     npm update && \
     rm -rf pool_configs && \
     rm config_example.json)
