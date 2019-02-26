@@ -35,9 +35,9 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 RUN git clone https://github.com/buzzkillb/node-open-mining-portal.git
 
 WORKDIR /root/node-open-mining-portal
-RUN npm install
-RUN npm update
-RUN rm -rf pool_configs
-RUN rm config_example.json
+RUN (npm install && \
+    npm update && \
+    rm -rf pool_configs && \
+    rm config_example.json)
 
 CMD ["node", "init.js"]
