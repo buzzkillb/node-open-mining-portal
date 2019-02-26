@@ -30,13 +30,8 @@ ENV PATH $NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
 RUN echo "source $NVM_DIR/nvm.sh && \
     nvm install $NODE_VERSION && \
     nvm alias default $NODE_VERSION && \
-    nvm use default" | bash
-#RUN (curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh && \
-#    touch ~/.bash_profile && \
-#    source ~/.profile && \
-#    nvm install 0.10.25 && \
-#    nvm use 0.10.25)
-RUN (git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
+    nvm use default" | bash && \
+    git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
     cd node-open-mining-portal && \
     npm install && \
     npm update && \
