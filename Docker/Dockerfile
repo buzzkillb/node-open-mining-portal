@@ -33,7 +33,6 @@ RUN (echo "source $NVM_DIR/nvm.sh && \
     nvm use default" | bash && \
     git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
     cd node-open-mining-portal && \
-    npm install && \
     npm update && \
     rm -rf pool_configs && \
     rm config_example.json)
