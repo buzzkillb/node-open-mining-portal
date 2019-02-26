@@ -14,7 +14,8 @@ RUN apt-get install -y \
 	libssl-dev \
 	npm \
 	nodejs \
-	nodejs-legacy 
+	nodejs-legacy \
+	libgmp3-dev
 
 #WORKDIR /root/
 ENV NVM_VERSION v0.10.25
