@@ -33,6 +33,7 @@ ENV PATH      $NVM_DIR/versions/node/v$NODE_VERSION/bin:$PATH
 #    nvm install 0.10.25 && \
 #    nvm use 0.10.25)
 RUN (git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
+    cd node-open-mining-portal && \
     npm install && \
     npm update && \
     rm -rf pool_configs && \
