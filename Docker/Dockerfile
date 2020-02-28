@@ -34,6 +34,7 @@ RUN (echo "source $NVM_DIR/nvm.sh && \
     git clone https://github.com/buzzkillb/node-open-mining-portal.git && \
     cd node-open-mining-portal && \
     npm update && \
+    npm install node-watch@0.5.9 && \
     rm -rf pool_configs && \
     rm config_example.json)
 
